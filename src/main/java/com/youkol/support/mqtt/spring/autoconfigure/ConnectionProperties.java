@@ -34,7 +34,7 @@ public class ConnectionProperties {
     /**
      * @see org.eclipse.paho.client.mqttv3.MqttConnectOptions#setUserName(String)
      */
-    private String userName;
+    private String username;
 
     /**
      * @see org.eclipse.paho.client.mqttv3.MqttConnectOptions#setPassword(char[])
@@ -88,12 +88,12 @@ public class ConnectionProperties {
         this.serverUri = serverUri;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

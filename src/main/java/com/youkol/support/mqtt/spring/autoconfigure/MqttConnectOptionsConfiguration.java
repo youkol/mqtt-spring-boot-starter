@@ -42,7 +42,7 @@ class MqttConnectOptionsConfiguration {
 
         PropertyMapper map = PropertyMapper.get().alwaysApplyingWhenNonNull();
         map.from(properties::getServerUri).to(options::setServerURIs);
-        map.from(properties::getUserName).to(options::setUserName);
+        map.from(properties::getUsername).to(options::setUserName);
         map.from(properties::getPassword).as(String::toCharArray).to(options::setPassword);
         map.from(properties::getKeepAliveInterval).to(options::setKeepAliveInterval);
         map.from(properties::getConnectionTimeout).to(options::setConnectionTimeout);
